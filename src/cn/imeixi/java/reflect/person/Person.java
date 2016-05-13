@@ -1,9 +1,14 @@
-package cn.imeixi.java.reflect;
+package cn.imeixi.java.reflect.person;
 
 public class Person {
 	
+	
 	public String name;
-	private String age;
+	private int age;
+	
+	private void getInfo(){
+		
+	}
 	
 	public String getName() {
 		return name;
@@ -11,13 +16,17 @@ public class Person {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getAge() {
-		return age;
-	}
-	public void setAge(String age) {
+	public void setName(String name,int age) {
+		this.name = name;
 		this.age = age;
 	}
-	public Person(String name, String age) {
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public Person(String name, int age) {
 		super();
 		this.name = name;
 		this.age = age;
@@ -26,12 +35,5 @@ public class Person {
 	public Person(){
 		
 	}
-	@Override
-	public String toString() {
-		return "Person [name=" + name + ", age=" + age + "]";
-	}
-	
-	
-	
 
 }
